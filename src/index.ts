@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 import * as path from 'path';
-import { RAG } from '@shoprag/core'
+import { RAG, JsonObject } from '@shoprag/core';
 
 export default class DirRAG implements RAG {
     private outputDir: string;
@@ -9,11 +9,11 @@ export default class DirRAG implements RAG {
         return {};
     }
 
-    async init(credentials: { [key: string]: string }, config: { [key: string]: string }): Promise<void> {
+    async init(credentials: { [key: string]: string }, config: JsonObject): Promise<void> {
         if (!config['outputDir']) {
             throw new Error('outputDir must be specified in the config');
         }
-        this.outputDir = path.resolve(process.cwd(), config['outputDir']);
+        this.outputDir = path.resolve(process.cwd(), config['outputDir'] as string);
         if (!fs.existsSync(this.outputDir)) {
             fs.mkdirSync(this.outputDir, { recursive: true });
         }

@@ -16,7 +16,7 @@
     "author": "Peer-to-peer Privacy Systems Research, LLC",
     "license": "MIT",
     "dependencies": {
-        "@shoprag/core": "^1.0.4"
+        "@shoprag/core": "^1.0.7"
     },
     "devDependencies": {
         "@types/node": "^22.13.11",

@@ -1,6 +1,6 @@
 {
     "name": "@shoprag/rag-dir",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "ShopRAG RAG plugin for storing files in a local directory",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",

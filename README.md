@@ -1,6 +1,6 @@
 # `@shoprag/rag-dir`
 
-**@shoprag/rag-dir** is a RAG plugin for the ShopRAG ecosystem. It enables you to store normalized data fetched by ShopRAG's Shops as plain text (`.txt`) files in a specified local directory. This plugin is perfect for users seeking a straightforward, file-based storage solution for their ShopRAG projects.
+**@shoprag/rag-dir** is a RAG plugin for the [ShopRAG](https://github.com/shoprag/core) ecosystem. It enables you to store normalized data fetched by ShopRAG's Shops as plain text (`.txt`) files in a specified local directory. This plugin is perfect for users seeking a straightforward, file-based storage solution for their ShopRAG projects.
 
 ## Installation
 

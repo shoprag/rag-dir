@@ -2,7 +2,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { RAG } from '@shoprag/core'
 
-export class DirRAG implements RAG {
+export default class DirRAG implements RAG {
     private outputDir: string;
 
     requiredCredentials(): { [credentialName: string]: string } {
